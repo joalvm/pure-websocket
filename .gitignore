@@ -1,6 +1,5 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,windows
-# Edit at https://www.toptal.com/developers/gitignore?templates=node,visualstudiocode,windows
+
 
 ### Node ###
 # Logs
@@ -137,6 +136,7 @@ dist
 # Ignore all local history of files
 .history
 .ionide
+.vscode/
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -163,5 +163,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-# End of https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,windows
