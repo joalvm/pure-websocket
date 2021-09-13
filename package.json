@@ -1,0 +1,44 @@
+{
+  "name": "native-websocket",
+  "version": "1.0.0",
+  "description": "Native Websocket",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run build && cross-env NODE_ENV=development node dist/index.js",
+    "start:prod": "npm run build && cross-env NODE_ENV=production node dist/index.js",
+    "build": "npm run clean && tsc",
+    "clean": "rimraf ./dist",
+    "dev": "nodemon --config ./nodemon.json src/index.ts",
+    "dev:debug": "nodemon --config nodemon.json --inspect-brk src/index.ts"
+  },
+  "keywords": [
+    "websocket"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "uuid": "^8.3.2",
+    "ws": "^8.2.2"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.3",
+    "utf-8-validate": "^5.0.5"
+  },
+  "devDependencies": {
+    "@types/uuid": "^8.3.1",
+    "@types/ws": "^7.4.7",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.4.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
+}
